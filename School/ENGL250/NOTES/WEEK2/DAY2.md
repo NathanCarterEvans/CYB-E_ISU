@@ -1,111 +1,26 @@
 *Date:01/22/2024*
 # Homework
-- **NO ZYBOOKS UNTIL WEDNESDAY**
-#
-## **Summary**
-What was talked about -
+- In class activity
+- Tactics of Arguments - Think about an have written. EX: How do I convince friends to get pizz.
 
-- Class Policies
-- Class Structure
-- "Fluffiest Lecture" - LOL
-- OOP
-- ADT
+# Journal Exercise #1
+***Prompt:***
+>Where do you learn about what is going on in the world? News? Socail Media? Classes? Books? Friends? Do you follow national or international news or both? Do yuo feel like your sources are reliable (are telling as much unbiased news as possible)? Why  or whynot?
 
-#
-## **Class Policies:**
+***Response:***
+>My primary source of news comes from my family, friends, and other people I talk to. Since I am a private person, I tend to hide myself from networks and websites that would produce news. My family has a group chat with 100+ family members in it, and they talk a lot. Without fail every single day there is a new "Breaking news" story that one of them shares. Then they proceed to share their opion on it, and after two or three of them comment on it, it tends to get polical and starts a mini war.
 
-- Programming HW - Up to 3 days late with no penelty
-- Zybooks - Check daily for updates
-- Lowest 2 Lectures dropped - read PDF of the day
+# In class Activity
+***Prompt:***
+What color should this room be?
 
-#
-## **Lecture - OOP:**
+***Notes:***
+* Proffeional
+* Comfort & saftey
+* Assosiated with intelligence and formality, prestige - Website
+* Good Contrast
+* Is sexy
+* Less maintenance
+* Any surface can have a projector pointed on it
+* Gets rid of destraction
 
-**Topics:**
-
-- inheritance
-- objects have state
-- objects have identity
-- polymorphism
-
-#
-## **Inheritance**
-Vehicle
-->Truck
-->Car
-->->Sports Car
-->SUV
-``` java
-public class Car { //this makes a car object to be called
-	int fule;
-	int mpg;
-	static void Car(int fule, int mpg) {
-		this.fule = fule;
-		this.mpg = mpg;
-	}
-	static void Drive(){
-		***
-	}
-}
-
-public class SUV extends Car { 
-	static void SUV(){
-		***
-	}
-	
-	static void Tow(){
-		***
-	}
-	
-}
-
-public class Main {
-	static void main(){
-		SUV Saturn = new SUV(100, 25); //makes a new car SUV
-		Saturn.Tow();
-		Saturn.Drive();
-	}
-}
-```
-
-#
-## **Polymorphism**
-Classes use other classes
-``` java
-public class Car { //this makes a car object to be called
-	int fule;
-	int mpg;
-	static void Car(int fule, int mpg) {
-		this.fule = fule;
-		this.mpg = mpg;
-	}
-}
-
-public class Main { 
-	static void main(){
-		Car SUV = new Car(100, 25); //makes a new car SUV
-		System.out.println(SUV.fule);
-	}
-}
-```
-
-#
-## **Lecture Code**
-``` java
-Interface ISUID{
-	boolean contains(int id);
-	add(int id);
-	int size();
-}
-
-public class ISUProcessor implements ISUID{
-	int size;
-}
-```
-```
-Speed
-Functionality:		Sorted Arr.:		Unsorted Arr:
-size()			Instant			Instant
-add()			Linear O(n)		Instant
-contains()		Logarithmic		Linear
-```
