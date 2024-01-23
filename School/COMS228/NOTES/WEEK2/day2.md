@@ -1,5 +1,8 @@
-# **NO ZYBOOKS UNTIL WEDNESDAY**
-## **SUM**
+*Date:01/22/2024*
+# Homework
+- **NO ZYBOOKS UNTIL WEDNESDAY**
+#
+## **Summary**
 What was talked about -
 
 - Class Policies
