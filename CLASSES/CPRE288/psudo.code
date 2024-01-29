@@ -1,0 +1,47 @@
+Drive to left back corner
+Use camereas:
+  If block in front
+    go around
+  else
+    drive twords back left
+
+once at left
+To Build Field
+Scan
+Turn Left
+Scan
+Turn Right
+Scan
+
+Build Field
+[
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+[x x x x x x x x x x x x x x x x]
+]
+
+Each slot is 1/4 the size of the robot
+B = Bolder
+X = Unmapped
+T = Target
+R = Robot
+
+drive forward and update field
+
+Continue untill target is found
+once target is found
+path find
+drive path
