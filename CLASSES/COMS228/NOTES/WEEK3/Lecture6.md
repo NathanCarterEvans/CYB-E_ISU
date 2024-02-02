@@ -1,4 +1,69 @@
-# Code Reference
+*Date:02/02/2024*
+*-No Attendance-*
+# Homework
+- 3 New Zybooks, due Wednesday
+
+# **Summary**
+- More class inheritance
+- Touching on .equals method 
+
+# **Lecture:**
+
+## Types of Classes:
+> Public: anyone in class can view
+> Protected: can only be seen by descendants
+> Private: kind of pointless for classes. It means no one can see or call it
+
+## .Equals()
+ `Obj1 == Obj2` is wrong. when using the ``==`` comparator only compares slots in memory
+
+example:
+``` java
+p = new Obj1(3); //value = 3; Location in memory = 0xFF01
+q = new Obj1(3); //value = 3; Location in memory = 0x01F3
+
+System.Out.Println(p==q)// Prints out false
+```
+
+The reason is because 0xFF01 is not the same as 0x01F3. Even though their values are both 3. 
+In order to use ``==`` you would have to define what is being compared.
+
+example:
+``` java
+p = new Obj1(3); //value = 3; Location in memory = 0xFF01
+q = new Obj1(3); //value = 3; Location in memory = 0x01F3
+
+System.Out.Println(p.value == q.value)// Prints out true
+```
+
+Alternately you can use the `.equals()` method. Every class has this as an inherited method from object.
+What this does is instead of comparing points in memory, it compares every value in the Objects;
+
+example:
+``` java
+p = new Obj1(3); //value = 3; Location in memory = 0xFF01
+q = new Obj1(3); //value = 3; Location in memory = 0x01F3
+
+System.Out.Println(p.equals(q))// Prints out true
+```
+
+There will be times you want .equals to only compare one variable. in that case you would need to write an @override.
+
+example of object class @override:
+``` java
+public class Obj1{
+	int value;
+	public void main(int value){
+		this.value = value;
+	}
+	
+	@override
+	public Boolean equals(Obj1 obj){
+		return obj.value == this.value;
+	}
+}
+```
+
 ## Inheritance: 
 > Using insects and bugs we learn how to type cast and understand inheritance.
 # Code
@@ -277,63 +342,7 @@ public interface Pollination
 }
 ```
 
-
-# Abstract Classes
->In object-oriented programming, an abstract class is a special kind of class that cannot be instantiated on its own. Think of it as a blueprint for other classes. It's like having a basic idea or a plan for something, but you can't use the plan as it is; you have to build something based on that plan.
->
->Here’s why you might want to use an abstract class:
->
->1. To Provide a Base Template: Abstract classes are great when you have a base class that should define certain functionalities, but the exact implementation of those functionalities should be left to the derived classes. It's like saying, “Hey, any class that comes from me needs to have these methods, but you decide how to do it.”
->
->2. To Avoid Code Duplication: If several classes share common methods or attributes, you can put all these common parts in an abstract class and then inherit them in the other classes. It's a neat way of keeping your code clean and avoiding repeating the same stuff everywhere.
->
->3. To Enforce a Contract for Derived Classes: By defining abstract methods in the abstract class, you ensure that all subclasses implement these methods. It's like setting rules for the subclasses, saying, “If you're going to be my subclass, you've got to include these methods.”
->
->abstract classes are a bit like setting the ground rules for other classes. They provide a template and enforce certain protocols, making sure that all the derived classes follow the same basic design, but allowing each subclass to have its own specific behavior. It's a way to organize and structure your code in a flexible and efficient manner.
-
-example:
-``` java
-public class abstract Obj1{
-	public void DoSomething();
-	public void DoSomethingElse();
-}
-```
-
-
-
-# Extends
-> The extends keyword in Java is used to create a subclass of an existing class. This is part of inheritance, which is a key feature of object-oriented programming. Inheritance allows a new class to acquire the properties and behaviors (methods) of an existing class.
->
-> breakdown of how it works:
-> 
->1. Inheritance: When a class extends another class, it inherits all the non-private methods and properties from the parent (or superclass). This means you can reuse code from the superclass in the subclass.
->
->2. Overriding Methods: In the subclass, you can override methods of the superclass. This means you can provide a specific implementation for a method that was defined in the superclass.
->
->3. Super Keyword: The super keyword is used in the subclass to call the constructor and methods of the superclass.
->
->4. Access Modifiers: The access modifiers like public, protected, and private determine whether inherited classes can access the superclass's fields and methods.
-
-example:
-``` java
-public class abstract Obj1{
-	public void DoSomething();
-	public void DoSomethingElse();
-}
-
-public class Obj2 extends Obj1{
-	
-	public void DoSomething(){ // without this there is an error
-		//Something
-	}
-	
-	public void DoSomethingElse(){ // without this there is an error
-		//Something Else
-	}
-}
-```
-
-# Coding Examples/Practice
+# In class activity
 1. 
 ``` java		
 		Locomotion l; 	 // okay 
@@ -476,3 +485,5 @@ public class Obj2 extends Obj1{
         	// ClassCastException: Mantis cannot be cast to Bee
         	((Bee) ((Insect) m)).makeHoney(); 
 ```
+
+
