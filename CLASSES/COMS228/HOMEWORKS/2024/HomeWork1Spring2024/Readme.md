@@ -1,4 +1,4 @@
-# Homework 1 question written by Prof. Batinov
+# Homework 1 Designed by Prof. Batinov
 This assignment was due 02/20/2024 and was pushed after the due date, adhering to class policy
 
 # Privacy and Policy Notice
