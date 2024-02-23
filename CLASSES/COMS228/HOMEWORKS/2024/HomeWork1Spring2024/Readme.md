@@ -1,4 +1,4 @@
-# Homework 1 written by Prof. Batinov
+# Homework 1 question written by Prof. Batinov
 This assignment was due 02/20/2024 and was pushed after the due date, adhering to class policy
 
 # Privacy and Policy Notice
@@ -24,4 +24,3 @@ Any code of substance will be wirten with an author tag giving credit to the own
 If I do not have consent from the owner their section of code will not be included.
 
 All homework assignments will consist of my own answers and as such is my intilectual property.
-
